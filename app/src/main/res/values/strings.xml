@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SmartBasket</string>
+    <string name="screen_title">SmartBasket</string>
+    <string name="screen_subtitle">Быстро соберите список покупок и не забудьте важное</string>
+    <string name="product_hint">Название товара</string>
+    <string name="quantity_hint">Количество</string>
+    <string name="category_prompt">Выберите категорию</string>
+    <string name="urgent_label">Отметить как срочную покупку</string>
+    <string name="add_button">Добавить в корзину</string>
+    <string name="clear_button">Очистить</string>
+    <string name="section_title">Сегодня в списке</string>
+    <string name="sample_item_one">Молоко — 1 л</string>
+    <string name="sample_item_two">Хлеб цельнозерновой — 1 шт.</string>
+</resources>
