@@ -10,6 +10,8 @@ Android-проект для первой практической работы. 
 - `app/src/main/java/ru/practice/smartbasket/MainActivity.java` - основной Activity.
 - `docs/practice1_notes.md` - пояснительная записка с концепцией, описанием экрана и местом под скриншоты.
 - `docs/practice2_notes.md` - пояснительная записка ко второй практической работе.
+- `docs/practice1_notes.docx` - пояснительная записка к первой работе в формате Word.
+- `docs/practice2_notes.docx` - пояснительная записка ко второй работе в формате Word.
 
 ## Параметры
 
