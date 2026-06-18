@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="shopping_categories">
+        <item>Овощи и фрукты</item>
+        <item>Молочные продукты</item>
+        <item>Бакалея</item>
+        <item>Товары для дома</item>
+    </string-array>
+</resources>

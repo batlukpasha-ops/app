@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SmartBasket</string>
+    <string name="screen_title">SmartBasket</string>
+    <string name="screen_subtitle">Быстро соберите список покупок и не забудьте важное</string>
+    <string name="product_hint">Название товара</string>
+    <string name="quantity_hint">Количество</string>
+    <string name="category_prompt">Выберите категорию</string>
+    <string name="urgent_label">Отметить как срочную покупку</string>
+    <string name="add_button">Добавить в корзину</string>
+    <string name="clear_button">Очистить</string>
+    <string name="shopping_nav_content">Перейти к экрану покупок</string>
+    <string name="settings_nav_content">Перейти к настройкам</string>
+    <string name="shopping_nav_label">Покупки</string>
+    <string name="settings_nav_label">Настройки</string>
+    <string name="section_title">Сегодня в списке</string>
+    <string name="sample_item_one">Молоко — 1 л</string>
+    <string name="sample_item_two">Хлеб цельнозерновой — 1 шт.</string>
+    <string name="shopping_screen_title">Покупки</string>
+    <string name="shopping_screen_subtitle">Проверьте список перед походом в магазин</string>
+    <string name="shopping_plan_title">План на сегодня</string>
+    <string name="shopping_plan_one">Купить продукты для завтрака</string>
+    <string name="shopping_plan_two">Проверить товары для дома</string>
+    <string name="shopping_plan_three">Отметить срочные покупки</string>
+    <string name="delivery_button">Запланировать доставку</string>
+    <string name="favorites_button">Избранные товары</string>
+    <string name="settings_screen_title">Настройки</string>
+    <string name="settings_screen_subtitle">Настройте приложение под свой список покупок</string>
+    <string name="settings_notifications">Напоминать о срочных покупках</string>
+    <string name="settings_budget">Показывать подсказку по бюджету</string>
+    <string name="settings_theme">Использовать зеленую тему SmartBasket</string>
+    <string name="save_settings_button">Сохранить настройки</string>
+    <string name="reset_settings_button">Сбросить</string>
+    <string name="back_content">Вернуться на главный экран</string>
+    <string name="toast_main">Главный экран открыт</string>
+    <string name="toast_add">Товар будет добавлен в список</string>
+    <string name="toast_clear">Форма будет очищена</string>
+    <string name="toast_delivery">Раздел доставки будет добавлен позже</string>
+    <string name="toast_favorites">Избранные товары будут добавлены позже</string>
+    <string name="toast_save_settings">Настройки будут сохранены позже</string>
+    <string name="toast_reset_settings">Настройки будут сброшены позже</string>
+</resources>
