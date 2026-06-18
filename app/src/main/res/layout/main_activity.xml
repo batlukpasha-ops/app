@@ -39,10 +39,75 @@
         android:textSize="16sp" />
 
     <LinearLayout
+        android:id="@+id/navigationButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/shoppingScreenButton"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/icon_button_background"
+                android:contentDescription="@string/shopping_nav_content"
+                android:onClick="openShoppingScreen"
+                android:padding="12dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_list" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="@string/shopping_nav_label"
+                android:textColor="@color/primary_dark"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/settingsScreenButton"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/icon_button_background"
+                android:contentDescription="@string/settings_nav_content"
+                android:onClick="openSettingsScreen"
+                android:padding="12dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_settings" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="@string/settings_nav_label"
+                android:textColor="@color/primary_dark"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
         android:id="@+id/addProductPanel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/panel_background"
         android:orientation="vertical">
 
@@ -106,6 +171,7 @@
                 android:layout_height="52dp"
                 android:layout_weight="1"
                 android:background="@drawable/primary_button_background"
+                android:onClick="addProduct"
                 android:text="@string/add_button"
                 android:textAllCaps="false"
                 android:textColor="@color/text_primary"
@@ -118,6 +184,7 @@
                 android:layout_marginStart="10dp"
                 android:layout_weight="1"
                 android:background="@drawable/secondary_button_background"
+                android:onClick="clearProductForm"
                 android:text="@string/clear_button"
                 android:textAllCaps="false"
                 android:textColor="@color/primary_dark"

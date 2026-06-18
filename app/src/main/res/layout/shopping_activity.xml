@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/screen_background"
+    android:orientation="vertical"
+    android:padding="24dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/shoppingHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/backFromShoppingButton"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:background="@drawable/icon_button_background"
+            android:contentDescription="@string/back_content"
+            android:onClick="openMainScreen"
+            android:padding="10dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_back" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginEnd="14dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/shoppingTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/shopping_screen_title"
+                android:textColor="@color/primary_dark"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/shoppingSubtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/shopping_screen_subtitle"
+                android:textColor="@color/text_secondary"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/settingsFromShoppingButton"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:background="@drawable/icon_button_background"
+            android:contentDescription="@string/settings_nav_content"
+            android:onClick="openSettingsScreen"
+            android:padding="10dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_settings" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/shoppingListIcon"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="24dp"
+        android:contentDescription="@string/shopping_screen_title"
+        android:src="@drawable/ic_list" />
+
+    <LinearLayout
+        android:id="@+id/shoppingPlanPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/panel_background"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/shoppingPlanTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/shopping_plan_title"
+            android:textColor="@color/primary_dark"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/shoppingPlanOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:buttonTint="@color/accent_dark"
+            android:text="@string/shopping_plan_one"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/shoppingPlanTwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/accent_dark"
+            android:text="@string/shopping_plan_two"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/shoppingPlanThree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/accent_dark"
+            android:text="@string/shopping_plan_three"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/deliveryButton"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/primary_button_background"
+        android:onClick="scheduleDelivery"
+        android:text="@string/delivery_button"
+        android:textAllCaps="false"
+        android:textColor="@color/text_primary"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/favoritesButton"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/secondary_button_background"
+        android:onClick="showFavorites"
+        android:text="@string/favorites_button"
+        android:textAllCaps="false"
+        android:textColor="@color/primary_dark"
+        android:textStyle="bold" />
+
+</LinearLayout>

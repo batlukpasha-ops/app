@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/screen_background"
+    android:orientation="vertical"
+    android:padding="24dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/settingsHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/backFromSettingsButton"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:background="@drawable/icon_button_background"
+            android:contentDescription="@string/back_content"
+            android:onClick="openMainScreen"
+            android:padding="10dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_back" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginEnd="14dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/settingsTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/settings_screen_title"
+                android:textColor="@color/primary_dark"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/settingsSubtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/settings_screen_subtitle"
+                android:textColor="@color/text_secondary"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/shoppingFromSettingsButton"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:background="@drawable/icon_button_background"
+            android:contentDescription="@string/shopping_nav_content"
+            android:onClick="openShoppingScreen"
+            android:padding="10dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_list" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/settingsIcon"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="24dp"
+        android:contentDescription="@string/settings_screen_title"
+        android:src="@drawable/ic_settings" />
+
+    <LinearLayout
+        android:id="@+id/settingsPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/panel_background"
+        android:orientation="vertical">
+
+        <Switch
+            android:id="@+id/notificationsSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/settings_notifications"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp"
+            android:thumbTint="@color/accent"
+            android:trackTint="@color/divider" />
+
+        <Switch
+            android:id="@+id/budgetSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/settings_budget"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp"
+            android:thumbTint="@color/accent"
+            android:trackTint="@color/divider" />
+
+        <Switch
+            android:id="@+id/themeSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:checked="true"
+            android:text="@string/settings_theme"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp"
+            android:thumbTint="@color/accent"
+            android:trackTint="@color/divider" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/saveSettingsButton"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/primary_button_background"
+        android:onClick="saveSettings"
+        android:text="@string/save_settings_button"
+        android:textAllCaps="false"
+        android:textColor="@color/text_primary"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/resetSettingsButton"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/secondary_button_background"
+        android:onClick="resetSettings"
+        android:text="@string/reset_settings_button"
+        android:textAllCaps="false"
+        android:textColor="@color/primary_dark"
+        android:textStyle="bold" />
+
+</LinearLayout>
